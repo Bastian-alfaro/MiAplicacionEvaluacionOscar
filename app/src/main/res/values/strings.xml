@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MiAplicacionEvaluacionOscar</string>
+
+    <!-- Clave de la API de Google Maps -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDuelOp_57iRkE2cDrUTcoNgjg2BcbrOKQ
+    </string>
 </resources>
