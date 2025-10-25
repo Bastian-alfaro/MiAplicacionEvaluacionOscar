@@ -5,24 +5,23 @@ Este informe documentara y detallara las buenas practicas o como se dicen las Be
 
 A) Evitar el uso de versiones de android vulnerables:
 1. Vulnerabilidad identificada:
-   -La app puede instalarse en versiones de android no actualizadas lo cual expone      a la app a fallas de seguridad conocidas
+   -La app puede instalarse en versiones de android no actualizadas lo cual expone a la app a fallas de seguridad conocidas
 2. Practica implementada:
-   -Que logre soportar Android 10 o superior y limitar la instalacion en versiones     antiguas vulnerables
+   -Que logre soportar Android 10 o superior y limitar la instalacion en              versiones antiguas vulnerables
 3. Beneficio de seguridad:
-   -Los dispositivos reciben actualizaciones de seguridad y se reduce la exposicion     a vulnerabilidad conocidas en android antiguos
+   -Los dispositivos reciben actualizaciones de seguridad y se reduce la              exposicion a vulnerabilidad conocidas en android antiguos
 
 B) Deshabilitar Debug en produccion:
 1. Vulnerabilidad identificada:
    - Debug habilitado y certificado de debug usado
 2. Practica implementada:
-   -  Deshabilitar debug en versión de producción y Firmar la app concertificado        de producción seguro
+   - Deshabilitar debug en versión de producción y Firmar la app concertificado        de producción seguro
 3. Beneficio de seguridad:
    - Evita que atacantes puedan depurar o manipular la app y tambien                   Garantizaautenticidad de la app instalada en los dispositivos
 
 C) Proteccion de datos sensibles y claves:
 1. Vulnerabilidad identificada:
-   -  Información sensible hardcoded en el código (`google_maps_key`).  
-- Datos de la app pueden ser respaldados vía ADB.
+   -  Información sensible hardcoded en el código (`google_maps_key`) y los datos       de la app pueden ser respaldados vía ADB.
 2. Practica implementada:
    - Se Cifran los datos sensibles en almacenamiento local y  
      se guardan las claves API en un lugar seguro, no en el código, tambien se  
@@ -53,7 +52,7 @@ E) Control de permisos y componentes exportados
 F) Resumen de las Best Practices:
 Implementar estas **Best Practices** asegura que la aplicación:  
 
-- Sea más robusta frente a ataques.  
-- Proteja datos sensibles de los usuarios.  
-- Cumpla con estándares de seguridad recomendados para aplicaciones móviles.  
-- Mitigue todas las vulnerabilidades detectadas por MobSF.
+  - Sea más robusta frente a ataques.  
+  - Proteja datos sensibles de los usuarios.  
+  - Cumpla con estándares de seguridad recomendados para aplicaciones móviles.  
+  - Mitigue todas las vulnerabilidades detectadas por MobSF.
